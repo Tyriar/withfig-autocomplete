@@ -128,7 +128,8 @@ export const gitGenerators: Record<string, Fig.Generator> = {
 
       const lines = output.split("\n");
       const firstLine = lines.length > 0 ? lines[0] : undefined;
-      const hashLength = firstLine && firstLine.length > 0 ? firstLine.indexOf(' ') : 7;
+      const hashLength =
+        firstLine && firstLine.length > 0 ? firstLine.indexOf(" ") : 7;
       const descriptionStart = hashLength + 1;
 
       return lines.map((line) => {
